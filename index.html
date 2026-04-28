@@ -30,713 +30,713 @@ src="https://www.facebook.com/tr?id=1409775579119445&ev=PageView&noscript=1"/></
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
-    --teal: #4b6166;
-    --teal-mid: #5b6e79;
-    --teal-light: #adcdcc;
-    --teal-pale: #eef4f4;
-    --gold: #e0b551;
-    --gold-dark: #c9a040;
-    --gold-pale: #fdf6e3;
-    --black: #1a1a1a;
-    --dark: #2a3438;
-    --mid: #5b6e79;
-    --muted: #8a9ea5;
-    --border: #dce8e8;
-    --border-light: #eef4f4;
-    --white: #ffffff;
-    --off-white: #f7f9f9;
+	--teal: #4b6166;
+	--teal-mid: #5b6e79;
+	--teal-light: #adcdcc;
+	--teal-pale: #eef4f4;
+	--gold: #e0b551;
+	--gold-dark: #c9a040;
+	--gold-pale: #fdf6e3;
+	--black: #1a1a1a;
+	--dark: #2a3438;
+	--mid: #5b6e79;
+	--muted: #8a9ea5;
+	--border: #dce8e8;
+	--border-light: #eef4f4;
+	--white: #ffffff;
+	--off-white: #f7f9f9;
   }
 
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Lato', sans-serif;
-    background: var(--teal);
-    color: var(--white);
-    min-height: 100vh;
-    overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	background: var(--teal);
+	color: var(--white);
+	min-height: 100vh;
+	overflow-x: hidden;
   }
 
   /* ── Dot texture overlay ── */
   body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
-    background-size: 28px 28px;
-    pointer-events: none;
-    z-index: 0;
+	content: '';
+	position: fixed;
+	inset: 0;
+	background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+	background-size: 28px 28px;
+	pointer-events: none;
+	z-index: 0;
   }
 
   /* ── Decorative circles ── */
   .bg-circle {
-    position: fixed;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
+	position: fixed;
+	border-radius: 50%;
+	pointer-events: none;
+	z-index: 0;
   }
   .bg-circle-1 {
-    width: 600px; height: 600px;
-    top: -200px; right: -200px;
-    border: 1.5px solid rgba(224,181,81,0.12);
+	width: 600px; height: 600px;
+	top: -200px; right: -200px;
+	border: 1.5px solid rgba(224,181,81,0.12);
   }
   .bg-circle-2 {
-    width: 400px; height: 400px;
-    top: -100px; right: -100px;
-    border: 1px solid rgba(224,181,81,0.08);
+	width: 400px; height: 400px;
+	top: -100px; right: -100px;
+	border: 1px solid rgba(224,181,81,0.08);
   }
   .bg-circle-3 {
-    width: 500px; height: 500px;
-    bottom: -150px; left: -150px;
-    border: 1.5px solid rgba(255,255,255,0.05);
+	width: 500px; height: 500px;
+	bottom: -150px; left: -150px;
+	border: 1.5px solid rgba(255,255,255,0.05);
   }
 
   /* ── Gold bars ── */
   .gold-bar-top {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    height: 5px;
-    background: var(--gold);
-    z-index: 100;
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	height: 5px;
+	background: var(--gold);
+	z-index: 100;
   }
   .gold-bar-bottom {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    height: 5px;
-    background: var(--gold);
-    z-index: 100;
+	position: fixed;
+	bottom: 0; left: 0; right: 0;
+	height: 5px;
+	background: var(--gold);
+	z-index: 100;
   }
 
   /* ── Layout ── */
   .page {
-    position: relative;
-    z-index: 1;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+	position: relative;
+	z-index: 1;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
   }
 
   .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 48px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 48px;
+	border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
   .nav-brand {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
   }
 
   .nav-eyebrow {
-    font-size: 9px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 700;
+	font-size: 9px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: var(--gold);
+	font-weight: 700;
   }
 
   .nav-name {
-    font-size: 15px;
-    font-weight: 700;
-    color: rgba(255,255,255,0.9);
-    letter-spacing: 0.5px;
+	font-size: 15px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.9);
+	letter-spacing: 0.5px;
   }
 
   .nav-url {
-    font-size: 12px;
-    color: rgba(255,255,255,0.35);
-    letter-spacing: 1px;
-    text-decoration: none;
+	font-size: 12px;
+	color: rgba(255,255,255,0.35);
+	letter-spacing: 1px;
+	text-decoration: none;
   }
 
   .nav-url:hover { color: var(--gold); }
 
   /* ── Main content ── */
   .main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 24px 100px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 24px 100px;
   }
 
   .quiz-container {
-    width: 100%;
-    max-width: 680px;
+	width: 100%;
+	max-width: 680px;
   }
 
   /* ── Intro screen ── */
   #intro-screen { animation: fadeUp 0.6s ease; }
 
   .intro-tag {
-    display: inline-block;
-    background: rgba(224,181,81,0.15);
-    border: 1px solid rgba(224,181,81,0.3);
-    color: var(--gold);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 6px 14px;
-    border-radius: 2px;
-    margin-bottom: 28px;
+	display: inline-block;
+	background: rgba(224,181,81,0.15);
+	border: 1px solid rgba(224,181,81,0.3);
+	color: var(--gold);
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding: 6px 14px;
+	border-radius: 2px;
+	margin-bottom: 28px;
   }
 
   .intro-headline {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(34px, 5vw, 54px);
-    font-weight: 700;
-    line-height: 1.1;
-    color: var(--white);
-    margin-bottom: 12px;
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: clamp(34px, 5vw, 54px);
+	font-weight: 700;
+	line-height: 1.1;
+	color: var(--white);
+	margin-bottom: 12px;
   }
 
   .intro-headline em {
-    font-style: italic;
-    color: var(--gold);
+	font-style: italic;
+	color: var(--gold);
   }
 
   .intro-sub {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.65;
-    color: rgba(255,255,255,0.7);
-    margin-bottom: 40px;
-    max-width: 560px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.65;
+	color: rgba(255,255,255,0.7);
+	margin-bottom: 40px;
+	max-width: 560px;
   }
 
   .intro-divider {
-    width: 56px;
-    height: 3px;
-    background: var(--gold);
-    margin-bottom: 36px;
+	width: 56px;
+	height: 3px;
+	background: var(--gold);
+	margin-bottom: 36px;
   }
 
   .intro-meta {
-    display: flex;
-    gap: 32px;
-    margin-bottom: 44px;
-    flex-wrap: wrap;
+	display: flex;
+	gap: 32px;
+	margin-bottom: 44px;
+	flex-wrap: wrap;
   }
 
   .meta-item {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
   }
 
   .meta-value {
-    font-size: 24px;
-    font-weight: 900;
-    color: var(--white);
-    line-height: 1;
+	font-size: 24px;
+	font-weight: 900;
+	color: var(--white);
+	line-height: 1;
   }
 
   .meta-label {
-    font-size: 12px;
-    color: rgba(255,255,255,0.45);
-    font-weight: 400;
-    letter-spacing: 0.5px;
+	font-size: 12px;
+	color: rgba(255,255,255,0.45);
+	font-weight: 400;
+	letter-spacing: 0.5px;
   }
 
   .start-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--gold);
-    color: var(--dark);
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 18px 36px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.2s ease;
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	background: var(--gold);
+	color: var(--dark);
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding: 18px 36px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.2s ease;
   }
 
   .start-btn:hover {
-    background: var(--gold-dark);
-    transform: translateY(-1px);
+	background: var(--gold-dark);
+	transform: translateY(-1px);
   }
 
   .start-btn:active { transform: translateY(0); }
 
   .start-arrow {
-    font-size: 18px;
-    transition: transform 0.2s;
+	font-size: 18px;
+	transition: transform 0.2s;
   }
 
   .start-btn:hover .start-arrow { transform: translateX(4px); }
 
   .intro-note {
-    margin-top: 16px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.3);
-    font-style: italic;
+	margin-top: 16px;
+	font-size: 12px;
+	color: rgba(255,255,255,0.3);
+	font-style: italic;
   }
 
   /* ── Quiz screen ── */
   #quiz-screen { display: none; animation: fadeUp 0.4s ease; }
 
   .progress-section {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
   }
 
   .progress-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
   }
 
   .progress-section-label {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--gold);
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--gold);
   }
 
   .progress-count {
-    font-size: 12px;
-    color: rgba(255,255,255,0.4);
-    font-weight: 400;
+	font-size: 12px;
+	color: rgba(255,255,255,0.4);
+	font-weight: 400;
   }
 
   .progress-track {
-    height: 2px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 2px;
-    overflow: hidden;
+	height: 2px;
+	background: rgba(255,255,255,0.1);
+	border-radius: 2px;
+	overflow: hidden;
   }
 
   .progress-fill {
-    height: 100%;
-    background: var(--gold);
-    border-radius: 2px;
-    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 0%;
+	height: 100%;
+	background: var(--gold);
+	border-radius: 2px;
+	transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	width: 0%;
   }
 
   .question-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 4px;
-    padding: 40px;
-    margin-bottom: 24px;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.1);
+	border-radius: 4px;
+	padding: 40px;
+	margin-bottom: 24px;
   }
 
   .q-number {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.3);
-    margin-bottom: 14px;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.3);
+	margin-bottom: 14px;
   }
 
   .q-text {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.45;
-    color: var(--white);
-    margin-bottom: 28px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.45;
+	color: var(--white);
+	margin-bottom: 28px;
   }
 
   .options-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
   }
 
   .option {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 16px 20px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    text-align: left;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	padding: 16px 20px;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.1);
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	text-align: left;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
   }
 
   .option:hover {
-    background: rgba(255,255,255,0.08);
-    border-color: rgba(224,181,81,0.4);
+	background: rgba(255,255,255,0.08);
+	border-color: rgba(224,181,81,0.4);
   }
 
   .option.selected {
-    background: rgba(224,181,81,0.1);
-    border-color: var(--gold);
+	background: rgba(224,181,81,0.1);
+	border-color: var(--gold);
   }
 
   .option.selected .opt-radio {
-    background: var(--gold);
-    border-color: var(--gold);
+	background: var(--gold);
+	border-color: var(--gold);
   }
 
   .option.selected .opt-radio::after { opacity: 1; }
 
   .opt-radio {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1.5px solid rgba(255,255,255,0.25);
-    flex-shrink: 0;
-    margin-top: 1px;
-    position: relative;
-    transition: all 0.15s;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1.5px solid rgba(255,255,255,0.25);
+	flex-shrink: 0;
+	margin-top: 1px;
+	position: relative;
+	transition: all 0.15s;
   }
 
   .opt-radio::after {
-    content: '';
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--dark);
-    opacity: 0;
-    transition: opacity 0.15s;
+	content: '';
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px; height: 8px;
+	border-radius: 50%;
+	background: var(--dark);
+	opacity: 0;
+	transition: opacity 0.15s;
   }
 
   .opt-text {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: rgba(255,255,255,0.75);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: rgba(255,255,255,0.75);
   }
 
   .option.selected .opt-text {
-    color: var(--white);
-    font-weight: 700;
+	color: var(--white);
+	font-weight: 700;
   }
 
   /* Nav buttons */
   .quiz-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
   }
 
   .nav-btn-quiz {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    border-radius: 2px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.15s;
-    border: 1px solid rgba(255,255,255,0.2);
-    background: transparent;
-    color: rgba(255,255,255,0.5);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 24px;
+	border-radius: 2px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.15s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background: transparent;
+	color: rgba(255,255,255,0.5);
   }
 
   .nav-btn-quiz:hover:not(:disabled) {
-    background: rgba(255,255,255,0.06);
-    color: var(--white);
+	background: rgba(255,255,255,0.06);
+	color: var(--white);
   }
 
   .nav-btn-quiz:disabled {
-    opacity: 0.25;
-    cursor: default;
+	opacity: 0.25;
+	cursor: default;
   }
 
   .nav-btn-quiz.primary {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: var(--dark);
+	background: var(--gold);
+	border-color: var(--gold);
+	color: var(--dark);
   }
 
   .nav-btn-quiz.primary:hover:not(:disabled) {
-    background: var(--gold-dark);
-    border-color: var(--gold-dark);
-    color: var(--dark);
+	background: var(--gold-dark);
+	border-color: var(--gold-dark);
+	color: var(--dark);
   }
 
   .nav-btn-quiz.primary:disabled {
-    background: rgba(224,181,81,0.25);
-    border-color: transparent;
-    color: rgba(255,255,255,0.3);
-    cursor: default;
+	background: rgba(224,181,81,0.25);
+	border-color: transparent;
+	color: rgba(255,255,255,0.3);
+	cursor: default;
   }
 
   /* ── Results screen ── */
   #result-screen { display: none; animation: fadeUp 0.5s ease; }
 
   .result-header {
-    margin-bottom: 36px;
+	margin-bottom: 36px;
   }
 
   .result-eyebrow {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 12px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: var(--gold);
+	margin-bottom: 12px;
   }
 
   .result-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(28px, 4vw, 42px);
-    font-weight: 700;
-    line-height: 1.15;
-    color: var(--white);
-    margin-bottom: 0;
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: clamp(28px, 4vw, 42px);
+	font-weight: 700;
+	line-height: 1.15;
+	color: var(--white);
+	margin-bottom: 0;
   }
 
   /* Score band */
   .score-band {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 4px;
-    padding: 32px;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
+	background: rgba(255,255,255,0.05);
+	border: 1px solid rgba(255,255,255,0.12);
+	border-radius: 4px;
+	padding: 32px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
   }
 
   .score-band::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; bottom: 0;
-    width: 4px;
-    background: var(--gold);
+	content: '';
+	position: absolute;
+	top: 0; left: 0; bottom: 0;
+	width: 4px;
+	background: var(--gold);
   }
 
   .score-row {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin-bottom: 14px;
+	display: flex;
+	align-items: baseline;
+	gap: 14px;
+	margin-bottom: 14px;
   }
 
   .score-big {
-    font-size: 72px;
-    font-weight: 900;
-    color: var(--gold);
-    line-height: 1;
-    font-family: 'Playfair Display', serif;
+	font-size: 72px;
+	font-weight: 900;
+	color: var(--gold);
+	line-height: 1;
+	font-family: 'Playfair Display', serif;
   }
 
   .score-denom {
-    font-size: 16px;
-    color: rgba(255,255,255,0.35);
-    font-weight: 300;
+	font-size: 16px;
+	color: rgba(255,255,255,0.35);
+	font-weight: 300;
   }
 
   .score-era-tag {
-    display: inline-block;
-    background: rgba(224,181,81,0.12);
-    border: 1px solid rgba(224,181,81,0.3);
-    color: var(--gold);
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 5px 12px;
-    border-radius: 2px;
-    margin-bottom: 12px;
+	display: inline-block;
+	background: rgba(224,181,81,0.12);
+	border: 1px solid rgba(224,181,81,0.3);
+	color: var(--gold);
+	font-size: 9px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding: 5px 12px;
+	border-radius: 2px;
+	margin-bottom: 12px;
   }
 
   .score-headline {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1.4;
-    margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--white);
+	line-height: 1.4;
+	margin-bottom: 10px;
   }
 
   .score-desc {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.65);
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.7;
+	color: rgba(255,255,255,0.65);
   }
 
   /* Breakdown grid */
   .breakdown-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+	margin-bottom: 20px;
   }
 
   .breakdown-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 3px;
-    padding: 18px 16px;
-    text-align: center;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 3px;
+	padding: 18px 16px;
+	text-align: center;
   }
 
   .breakdown-label {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
-    margin-bottom: 8px;
-    font-weight: 700;
-    line-height: 1.3;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.35);
+	margin-bottom: 8px;
+	font-weight: 700;
+	line-height: 1.3;
   }
 
   .breakdown-score {
-    font-size: 32px;
-    font-weight: 900;
-    color: var(--gold);
-    line-height: 1;
-    font-family: 'Playfair Display', serif;
+	font-size: 32px;
+	font-weight: 900;
+	color: var(--gold);
+	line-height: 1;
+	font-family: 'Playfair Display', serif;
   }
 
   .breakdown-max {
-    font-size: 11px;
-    color: rgba(255,255,255,0.25);
-    margin-top: 2px;
+	font-size: 11px;
+	color: rgba(255,255,255,0.25);
+	margin-top: 2px;
   }
 
   /* Gap list */
   .gap-section {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 24px 28px;
-    margin-bottom: 20px;
+	background: rgba(255,255,255,0.03);
+	border: 1px solid rgba(255,255,255,0.07);
+	border-radius: 3px;
+	padding: 24px 28px;
+	margin-bottom: 20px;
   }
 
   .gap-title {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.3);
-    margin-bottom: 16px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.3);
+	margin-bottom: 16px;
   }
 
   .gap-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    font-size: 14px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.6);
-    line-height: 1.6;
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.06);
+	font-size: 14px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.6);
+	line-height: 1.6;
   }
 
   .gap-item:last-child { border-bottom: none; }
 
   .gap-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--gold);
-    flex-shrink: 0;
-    margin-top: 8px;
+	width: 6px; height: 6px;
+	border-radius: 50%;
+	background: var(--gold);
+	flex-shrink: 0;
+	margin-top: 8px;
   }
 
   /* CTA block */
   .cta-block {
-    background: rgba(224,181,81,0.08);
-    border: 1px solid rgba(224,181,81,0.25);
-    border-radius: 4px;
-    padding: 32px;
-    margin-bottom: 24px;
+	background: rgba(224,181,81,0.08);
+	border: 1px solid rgba(224,181,81,0.25);
+	border-radius: 4px;
+	padding: 32px;
+	margin-bottom: 24px;
   }
 
   .cta-label {
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 10px;
+	font-size: 9px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: var(--gold);
+	margin-bottom: 10px;
   }
 
   .cta-head {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 8px;
-    line-height: 1.3;
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--white);
+	margin-bottom: 8px;
+	line-height: 1.3;
   }
 
   .cta-sub {
-    font-size: 14px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.6);
-    line-height: 1.65;
-    margin-bottom: 24px;
+	font-size: 14px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.6);
+	line-height: 1.65;
+	margin-bottom: 24px;
   }
 
   .cta-btns {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
   }
 
   .cta-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 14px 28px;
-    border-radius: 2px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.15s;
-    text-decoration: none;
-    border: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 14px 28px;
+	border-radius: 2px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.15s;
+	text-decoration: none;
+	border: none;
   }
 
   .cta-btn.gold {
-    background: var(--gold);
-    color: var(--dark);
+	background: var(--gold);
+	color: var(--dark);
   }
 
   .cta-btn.gold:hover { background: var(--gold-dark); }
 
   .cta-btn.outline {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.7);
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.2);
+	color: rgba(255,255,255,0.7);
   }
 
   .cta-btn.outline:hover {
-    background: rgba(255,255,255,0.06);
-    color: var(--white);
+	background: rgba(255,255,255,0.06);
+	color: var(--white);
   }
 
   .restart-link {
-    background: none;
-    border: none;
-    color: rgba(255,255,255,0.25);
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
-    cursor: pointer;
-    padding: 8px 0;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    display: block;
-    text-align: center;
+	background: none;
+	border: none;
+	color: rgba(255,255,255,0.25);
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 8px 0;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	display: block;
+	text-align: center;
   }
 
   .restart-link:hover { color: rgba(255,255,255,0.5); }
@@ -745,80 +745,80 @@ src="https://www.facebook.com/tr?id=1409775579119445&ev=PageView&noscript=1"/></
   #email-screen { display: none; animation: fadeUp 0.5s ease; }
 
   .email-gate-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 4px;
-    padding: 48px 40px;
-    text-align: center;
+	background: rgba(255,255,255,0.05);
+	border: 1px solid rgba(255,255,255,0.12);
+	border-radius: 4px;
+	padding: 48px 40px;
+	text-align: center;
   }
 
   .email-gate-icon {
-    width: 56px; height: 56px;
-    border-radius: 50%;
-    background: rgba(224,181,81,0.12);
-    border: 1px solid rgba(224,181,81,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 24px;
-    font-size: 22px;
+	width: 56px; height: 56px;
+	border-radius: 50%;
+	background: rgba(224,181,81,0.12);
+	border: 1px solid rgba(224,181,81,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 24px;
+	font-size: 22px;
   }
 
   .email-gate-eyebrow {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 12px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: var(--gold);
+	margin-bottom: 12px;
   }
 
   .email-gate-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1.2;
-    margin-bottom: 12px;
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--white);
+	line-height: 1.2;
+	margin-bottom: 12px;
   }
 
   .email-gate-sub {
-    font-size: 15px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.6);
-    line-height: 1.65;
-    margin-bottom: 32px;
-    max-width: 440px;
-    margin-left: auto;
-    margin-right: auto;
+	font-size: 15px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.6);
+	line-height: 1.65;
+	margin-bottom: 32px;
+	max-width: 440px;
+	margin-left: auto;
+	margin-right: auto;
   }
 
   .email-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 420px;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	max-width: 420px;
+	margin: 0 auto;
   }
 
   .email-row {
-    display: flex;
-    gap: 10px;
+	display: flex;
+	gap: 10px;
   }
 
   .email-input {
-    flex: 1;
-    padding: 14px 18px;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 2px;
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--white);
-    outline: none;
-    transition: border-color 0.15s;
-    min-width: 0;
+	flex: 1;
+	padding: 14px 18px;
+	background: rgba(255,255,255,0.07);
+	border: 1px solid rgba(255,255,255,0.15);
+	border-radius: 2px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--white);
+	outline: none;
+	transition: border-color 0.15s;
+	min-width: 0;
   }
 
   .email-input::placeholder { color: rgba(255,255,255,0.3); }
@@ -826,100 +826,100 @@ src="https://www.facebook.com/tr?id=1409775579119445&ev=PageView&noscript=1"/></
   .email-input:focus { border-color: var(--gold); }
 
   .name-input {
-    width: 100%;
-    padding: 14px 18px;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 2px;
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--white);
-    outline: none;
-    transition: border-color 0.15s;
+	width: 100%;
+	padding: 14px 18px;
+	background: rgba(255,255,255,0.07);
+	border: 1px solid rgba(255,255,255,0.15);
+	border-radius: 2px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--white);
+	outline: none;
+	transition: border-color 0.15s;
   }
 
   .name-input::placeholder { color: rgba(255,255,255,0.3); }
   .name-input:focus { border-color: var(--gold); }
 
   .email-submit-btn {
-    width: 100%;
-    padding: 16px 32px;
-    background: var(--gold);
-    color: var(--dark);
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.15s;
+	width: 100%;
+	padding: 16px 32px;
+	background: var(--gold);
+	color: var(--dark);
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.15s;
   }
 
   .email-submit-btn:hover { background: var(--gold-dark); }
 
   .email-submit-btn:disabled {
-    background: rgba(224,181,81,0.3);
-    color: rgba(255,255,255,0.3);
-    cursor: default;
+	background: rgba(224,181,81,0.3);
+	color: rgba(255,255,255,0.3);
+	cursor: default;
   }
 
   .email-error {
-    font-size: 13px;
-    color: #f09595;
-    text-align: center;
-    min-height: 18px;
+	font-size: 13px;
+	color: #f09595;
+	text-align: center;
+	min-height: 18px;
   }
 
   .email-skip {
-    background: none;
-    border: none;
-    color: rgba(255,255,255,0.2);
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    cursor: pointer;
-    padding: 8px 0;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    display: block;
-    text-align: center;
-    margin-top: 8px;
-    transition: color 0.15s;
+	background: none;
+	border: none;
+	color: rgba(255,255,255,0.2);
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	cursor: pointer;
+	padding: 8px 0;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	display: block;
+	text-align: center;
+	margin-top: 8px;
+	transition: color 0.15s;
   }
 
   .email-skip:hover { color: rgba(255,255,255,0.4); }
 
   .email-privacy {
-    font-size: 11px;
-    color: rgba(255,255,255,0.2);
-    text-align: center;
-    line-height: 1.5;
-    margin-top: 4px;
+	font-size: 11px;
+	color: rgba(255,255,255,0.2);
+	text-align: center;
+	line-height: 1.5;
+	margin-top: 4px;
   }
 
   .email-gate-progress {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 32px;
   }
 
   .gate-step {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
   }
 
   .gate-step-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
+	width: 8px; height: 8px;
+	border-radius: 50%;
   }
 
   .gate-step.done { color: rgba(255,255,255,0.3); }
@@ -931,67 +931,67 @@ src="https://www.facebook.com/tr?id=1409775579119445&ev=PageView&noscript=1"/></
   .gate-step-line { width: 24px; height: 1px; background: rgba(255,255,255,0.1); }
 
   @media (max-width: 640px) {
-    .email-gate-card { padding: 36px 20px; }
-    .email-row { flex-direction: column; }
+	.email-gate-card { padding: 36px 20px; }
+	.email-row { flex-direction: column; }
   }
 
   /* ── Footer ── */
   .footer {
-    position: relative;
-    z-index: 1;
-    padding: 24px 48px 40px;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: gap;
-    gap: 16px;
+	position: relative;
+	z-index: 1;
+	padding: 24px 48px 40px;
+	border-top: 1px solid rgba(255,255,255,0.06);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: gap;
+	gap: 16px;
   }
 
   .footer-brand {
-    font-size: 12px;
-    color: rgba(255,255,255,0.2);
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+	font-size: 12px;
+	color: rgba(255,255,255,0.2);
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
   }
 
   .footer-links {
-    display: flex;
-    gap: 24px;
+	display: flex;
+	gap: 24px;
   }
 
   .footer-link {
-    font-size: 12px;
-    color: rgba(255,255,255,0.2);
-    text-decoration: none;
-    transition: color 0.15s;
+	font-size: 12px;
+	color: rgba(255,255,255,0.2);
+	text-decoration: none;
+	transition: color 0.15s;
   }
 
   .footer-link:hover { color: var(--gold); }
 
   /* ── Animations ── */
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
+	from { opacity: 0; transform: translateY(16px); }
+	to { opacity: 1; transform: translateY(0); }
   }
 
   /* ── Mobile ── */
   @media (max-width: 640px) {
-    .nav { padding: 20px 24px; }
-    .main { padding: 40px 16px 80px; }
-    .question-card { padding: 28px 20px; }
-    .breakdown-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-    .breakdown-card { padding: 14px 10px; }
-    .breakdown-score { font-size: 26px; }
-    .score-big { font-size: 56px; }
-    .cta-block { padding: 24px 20px; }
-    .cta-btns { flex-direction: column; }
-    .cta-btn { justify-content: center; }
-    .footer { padding: 20px 24px 36px; flex-direction: column; align-items: flex-start; }
-    .score-band { padding: 24px 20px; }
-    .gap-section { padding: 20px; }
-    .intro-meta { gap: 24px; }
+	.nav { padding: 20px 24px; }
+	.main { padding: 40px 16px 80px; }
+	.question-card { padding: 28px 20px; }
+	.breakdown-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+	.breakdown-card { padding: 14px 10px; }
+	.breakdown-score { font-size: 26px; }
+	.score-big { font-size: 56px; }
+	.cta-block { padding: 24px 20px; }
+	.cta-btns { flex-direction: column; }
+	.cta-btn { justify-content: center; }
+	.footer { padding: 20px 24px 36px; flex-direction: column; align-items: flex-start; }
+	.score-band { padding: 24px 20px; }
+	.gap-section { padding: 20px; }
+	.intro-meta { gap: 24px; }
   }
 </style>
 </head>
@@ -1007,147 +1007,146 @@ src="https://www.facebook.com/tr?id=1409775579119445&ev=PageView&noscript=1"/></
 
   <!-- Nav -->
   <nav class="nav">
-    <div class="nav-brand">
-      <div class="nav-eyebrow">Rob Bettis</div>
-      <div class="nav-name">Post-Agency Era</div>
-    </div>
-    <a href="https://robbettis.com" class="nav-url" target="_blank">robbettis.com</a>
+	<div class="nav-brand">
+	  <div class="nav-eyebrow">Rob Bettis</div>
+	  <div class="nav-name">Post-Agency Era</div>
+	</div>
+	<a href="https://robbettis.com" class="nav-url" target="_blank">robbettis.com</a>
   </nav>
 
   <!-- Main -->
   <main class="main">
-    <div class="quiz-container">
+	<div class="quiz-container">
 
-      <!-- ── INTRO SCREEN ── -->
-      <div id="intro-screen">
-        <div class="intro-tag">Shopify Founder Self-Assessment</div>
-        <h1 class="intro-headline">Have you outgrown your<br><em>paid media agency?</em></h1>
-        <p class="intro-sub">Most Shopify founders feel the tension long before they name it. This quiz tells you exactly where your brand stands — and what to do next.</p>
-        <div class="intro-divider"></div>
-        <div class="intro-meta">
-          <div class="meta-item">
-            <div class="meta-value">10</div>
-            <div class="meta-label">Questions</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-value">2</div>
-            <div class="meta-label">Minutes</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-value">3</div>
-            <div class="meta-label">Result tiers</div>
-          </div>
-        </div>
-        <button class="start-btn" onclick="startQuiz()">
-          Take the quiz
-          <span class="start-arrow">→</span>
-        </button>
-        <p class="intro-note">No email required. Results are instant.</p>
-      </div>
+	  <!-- ── INTRO SCREEN ── -->
+	  <div id="intro-screen">
+		<div class="intro-tag">Shopify Founder Self-Assessment</div>
+		<h1 class="intro-headline">Have you outgrown your<br><em>paid media agency?</em></h1>
+		<p class="intro-sub">Most Shopify founders feel the tension long before they name it. This quiz tells you exactly where your brand stands — and what to do next.</p>
+		<div class="intro-divider"></div>
+		<div class="intro-meta">
+		  <div class="meta-item">
+			<div class="meta-value">10</div>
+			<div class="meta-label">Questions</div>
+		  </div>
+		  <div class="meta-item">
+			<div class="meta-value">2</div>
+			<div class="meta-label">Minutes</div>
+		  </div>
+		  <div class="meta-item">
+			<div class="meta-value">3</div>
+			<div class="meta-label">Result tiers</div>
+		  </div>
+		</div>
+		<button class="start-btn" onclick="startQuiz()">
+		  Take the quiz
+		  <span class="start-arrow">→</span>
+		</button>
+		<p class="intro-note">No email required. Results are instant.</p>
+	  </div>
 
-      <!-- ── QUIZ SCREEN ── -->
-      <div id="quiz-screen">
-        <div class="progress-section">
-          <div class="progress-top">
-            <div class="progress-section-label" id="section-label">Section A</div>
-            <div class="progress-count" id="progress-count">1 / 10</div>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" id="progress-fill"></div>
-          </div>
-        </div>
+	  <!-- ── QUIZ SCREEN ── -->
+	  <div id="quiz-screen">
+		<div class="progress-section">
+		  <div class="progress-top">
+			<div class="progress-section-label" id="section-label">Section A</div>
+			<div class="progress-count" id="progress-count">1 / 10</div>
+		  </div>
+		  <div class="progress-track">
+			<div class="progress-fill" id="progress-fill"></div>
+		  </div>
+		</div>
 
-        <div class="question-card">
-          <div class="q-number" id="q-number">Question 01</div>
-          <div class="q-text" id="q-text"></div>
-          <div class="options-list" id="options-list"></div>
-        </div>
+		<div class="question-card">
+		  <div class="q-number" id="q-number">Question 01</div>
+		  <div class="q-text" id="q-text"></div>
+		  <div class="options-list" id="options-list"></div>
+		</div>
 
-        <div class="quiz-nav">
-          <button class="nav-btn-quiz" id="back-btn" onclick="goBack()" disabled>← Back</button>
-          <button class="nav-btn-quiz primary" id="next-btn" onclick="goNext()" disabled>Next →</button>
-        </div>
-      </div>
+		<div class="quiz-nav">
+		  <button class="nav-btn-quiz" id="back-btn" onclick="goBack()" disabled>← Back</button>
+		  <button class="nav-btn-quiz primary" id="next-btn" onclick="goNext()" disabled>Next →</button>
+		</div>
+	  </div>
 
-      <!-- ── EMAIL GATE SCREEN ── -->
-      <div id="email-screen">
-        <div class="email-gate-card">
-          <div class="email-gate-progress">
-            <div class="gate-step done"><div class="gate-step-dot"></div>Quiz</div>
-            <div class="gate-step-line"></div>
-            <div class="gate-step active"><div class="gate-step-dot"></div>Your details</div>
-            <div class="gate-step-line"></div>
-            <div class="gate-step next"><div class="gate-step-dot"></div>Results</div>
-          </div>
-          <div class="email-gate-icon">📊</div>
-          <div class="email-gate-eyebrow">Almost there</div>
-          <h2 class="email-gate-title">Where should we send your results?</h2>
-          <p class="email-gate-sub">Enter your details below and your personalized Post-Agency Era readiness report will appear instantly — plus occasional insights from Rob on profitable paid media for Shopify brands.</p>
-          <div class="email-form">
-            <input type="text" class="name-input" id="gate-first-name" placeholder="First name" autocomplete="given-name">
-            <input type="email" class="email-input" id="gate-email" placeholder="Your email address" autocomplete="email">
-            <button class="email-submit-btn" id="gate-submit-btn" onclick="submitEmail()">See my results →</button>
-            <div class="email-error" id="email-error"></div>
-            <div class="email-privacy">No spam. Unsubscribe any time. Your results appear immediately.</div>
-            <button class="email-skip" onclick="skipEmail()">Skip — show my results without subscribing</button>
-          </div>
-        </div>
-      </div>
+	  <!-- ── EMAIL GATE SCREEN ── -->
+	  <div id="email-screen">
+		<div class="email-gate-card">
+		  <div class="email-gate-progress">
+			<div class="gate-step done"><div class="gate-step-dot"></div>Quiz</div>
+			<div class="gate-step-line"></div>
+			<div class="gate-step active"><div class="gate-step-dot"></div>Your details</div>
+			<div class="gate-step-line"></div>
+			<div class="gate-step next"><div class="gate-step-dot"></div>Results</div>
+		  </div>
+		  <div class="email-gate-icon">📊</div>
+		  <div class="email-gate-eyebrow">Almost there</div>
+		  <h2 class="email-gate-title">Where should we send your results?</h2>
+		  <p class="email-gate-sub">Enter your details below and your personalized Post-Agency Era readiness report will appear instantly — plus occasional insights from Rob on profitable paid media for Shopify brands.</p>
+		  <div class="email-form">
+			<input type="text" class="name-input" id="gate-first-name" placeholder="First name" autocomplete="given-name">
+			<input type="email" class="email-input" id="gate-email" placeholder="Your email address" autocomplete="email">
+			<button class="email-submit-btn" id="gate-submit-btn" onclick="submitEmail()">See my results →</button>
+			<div class="email-error" id="email-error"></div>
+			<div class="email-privacy">No spam. Unsubscribe any time. Your results appear immediately.</div>
+			<button class="email-skip" onclick="skipEmail()">Skip — show my results without subscribing</button>
+		  </div>
+		</div>
+	  </div>
 
-      <!-- ── RESULT SCREEN ── -->
-      <div id="result-screen">
-        <div class="result-header">
-          <div class="result-eyebrow">Your results</div>
-          <h2 class="result-title" id="result-title"></h2>
-        </div>
+	  <!-- ── RESULT SCREEN ── -->
+	  <div id="result-screen">
+		<div class="result-header">
+		  <div class="result-eyebrow">Your results</div>
+		  <h2 class="result-title" id="result-title"></h2>
+		</div>
 
-        <div class="score-band">
-          <div class="score-row">
-            <div class="score-big" id="score-big"></div>
-            <div class="score-denom">out of 30</div>
-          </div>
-          <div class="score-era-tag" id="score-era-tag"></div>
-          <p class="score-headline" id="score-headline"></p>
-          <p class="score-desc" id="score-desc"></p>
-        </div>
+		<div class="score-band">
+		  <div class="score-row">
+			<div class="score-big" id="score-big"></div>
+			<div class="score-denom">out of 30</div>
+		  </div>
+		  <div class="score-era-tag" id="score-era-tag"></div>
+		  <p class="score-headline" id="score-headline"></p>
+		  <p class="score-desc" id="score-desc"></p>
+		</div>
 
-        <div class="breakdown-grid">
-          <div class="breakdown-card">
-            <div class="breakdown-label">Agency Relationship</div>
-            <div class="breakdown-score" id="bd-a">—</div>
-            <div class="breakdown-max">out of 12</div>
-          </div>
-          <div class="breakdown-card">
-            <div class="breakdown-label">Strategic Clarity</div>
-            <div class="breakdown-score" id="bd-b">—</div>
-            <div class="breakdown-max">out of 9</div>
-          </div>
-          <div class="breakdown-card">
-            <div class="breakdown-label">Profit Foundation</div>
-            <div class="breakdown-score" id="bd-c">—</div>
-            <div class="breakdown-max">out of 9</div>
-          </div>
-        </div>
+		<div class="breakdown-grid">
+		  <div class="breakdown-card">
+			<div class="breakdown-label">Agency Relationship</div>
+			<div class="breakdown-score" id="bd-a">—</div>
+			<div class="breakdown-max">out of 12</div>
+		  </div>
+		  <div class="breakdown-card">
+			<div class="breakdown-label">Strategic Clarity</div>
+			<div class="breakdown-score" id="bd-b">—</div>
+			<div class="breakdown-max">out of 9</div>
+		  </div>
+		  <div class="breakdown-card">
+			<div class="breakdown-label">Profit Foundation</div>
+			<div class="breakdown-score" id="bd-c">—</div>
+			<div class="breakdown-max">out of 9</div>
+		  </div>
+		</div>
 
-        <div class="gap-section" id="gap-section"></div>
+		<div class="gap-section" id="gap-section"></div>
 
-        <div class="cta-block" id="cta-block"></div>
+		<div class="cta-block" id="cta-block"></div>
 
-        <button class="restart-link" onclick="restart()">Start over ↺</button>
-      </div>
+		<button class="restart-link" onclick="restart()">Start over ↺</button>
+	  </div>
 
-    </div>
+	</div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-brand">Rob Bettis · Post-Agency Era</div>
-    <div class="footer-links">
-      <a href="https://robbettis.com" class="footer-link" target="_blank">robbettis.com</a>
-      <a href="https://robbettis.com/profit-audit" class="footer-link" target="_blank">Profit Audit</a>
-      <a href="https://robbettis.com/services" class="footer-link" target="_blank">Services</a>
-      <a href="https://paidmediaredflags.com" class="footer-link" target="_blank">Free Guide</a>
-    </div>
+	<div class="footer-brand">Are you ready for your post-agency era?</div>
+	<div class="footer-links">
+	  <a href="https://robbettis.com" class="footer-link" target="_blank">About Rob</a>
+	  <a href="https://robbettis.com/profit-audit" class="footer-link" target="_blank">Profit Audit™</a>
+	  <a href="https://robbettis.com/fractional-paid-media-management" class="footer-link" target="_blank">Fractional Paid Media Management</a>
+	</div>
   </footer>
 
 </div>
@@ -1155,114 +1154,114 @@ src="https://www.facebook.com/tr?id=1409775579119445&ev=PageView&noscript=1"/></
 <script>
 const questions = [
   {
-    section: "Section A — Your agency relationship",
-    text: "How often do you speak directly with the senior person responsible for your paid media strategy?",
-    options: [
-      { text: "Rarely or never — I mostly deal with account managers", score: 3 },
-      { text: "Occasionally, but usually only when things go wrong", score: 2 },
-      { text: "Monthly, on scheduled calls", score: 1 },
-      { text: "I manage paid media in-house or directly with a senior partner", score: 0 }
-    ],
-    group: "a"
+	section: "Section A — Your agency relationship",
+	text: "How often do you speak directly with the senior person responsible for your paid media strategy?",
+	options: [
+	  { text: "Rarely or never — I mostly deal with account managers", score: 3 },
+	  { text: "Occasionally, but usually only when things go wrong", score: 2 },
+	  { text: "Monthly, on scheduled calls", score: 1 },
+	  { text: "I manage paid media in-house or directly with a senior partner", score: 0 }
+	],
+	group: "a"
   },
   {
-    section: "Section A — Your agency relationship",
-    text: "When you ask your agency a strategic question, how long does it typically take to get a clear, senior-level answer?",
-    options: [
-      { text: "Days — it has to go through multiple people", score: 3 },
-      { text: "24–48 hours — there's always a process", score: 2 },
-      { text: "Same day, but the answer is often surface-level", score: 1 },
-      { text: "Quickly and directly from someone who knows my account cold", score: 0 }
-    ],
-    group: "a"
+	section: "Section A — Your agency relationship",
+	text: "When you ask your agency a strategic question, how long does it typically take to get a clear, senior-level answer?",
+	options: [
+	  { text: "Days — it has to go through multiple people", score: 3 },
+	  { text: "24–48 hours — there's always a process", score: 2 },
+	  { text: "Same day, but the answer is often surface-level", score: 1 },
+	  { text: "Quickly and directly from someone who knows my account cold", score: 0 }
+	],
+	group: "a"
   },
   {
-    section: "Section A — Your agency relationship",
-    text: "How would you describe the accountability for your paid media results?",
-    options: [
-      { text: "Unclear — when results drop, there's always an explanation but rarely ownership", score: 3 },
-      { text: "Shared across a team, which makes it hard to know who's responsible", score: 2 },
-      { text: "Mostly clear, but I still feel like I'm managing the relationship", score: 1 },
-      { text: "One person, fully accountable — no ambiguity", score: 0 }
-    ],
-    group: "a"
+	section: "Section A — Your agency relationship",
+	text: "How would you describe the accountability for your paid media results?",
+	options: [
+	  { text: "Unclear — when results drop, there's always an explanation but rarely ownership", score: 3 },
+	  { text: "Shared across a team, which makes it hard to know who's responsible", score: 2 },
+	  { text: "Mostly clear, but I still feel like I'm managing the relationship", score: 1 },
+	  { text: "One person, fully accountable — no ambiguity", score: 0 }
+	],
+	group: "a"
   },
   {
-    section: "Section A — Your agency relationship",
-    text: "How many different people have managed your paid media account in the last 12 months?",
-    options: [
-      { text: "Three or more — there's been significant turnover", score: 3 },
-      { text: "Two — there was at least one handoff", score: 2 },
-      { text: "One person, but they work across many other accounts", score: 1 },
-      { text: "One person, fully dedicated — no handoffs", score: 0 }
-    ],
-    group: "a"
+	section: "Section A — Your agency relationship",
+	text: "How many different people have managed your paid media account in the last 12 months?",
+	options: [
+	  { text: "Three or more — there's been significant turnover", score: 3 },
+	  { text: "Two — there was at least one handoff", score: 2 },
+	  { text: "One person, but they work across many other accounts", score: 1 },
+	  { text: "One person, fully dedicated — no handoffs", score: 0 }
+	],
+	group: "a"
   },
   {
-    section: "Section B — Strategic clarity",
-    text: "When you look at your monthly paid media report, how confident are you in what it's telling you?",
-    options: [
-      { text: "Not confident — it often raises more questions than it answers", score: 3 },
-      { text: "Somewhat — I understand the surface numbers but not the strategy behind them", score: 2 },
-      { text: "Mostly confident, but I still rely on someone else to interpret it", score: 1 },
-      { text: "Fully confident — I know exactly what's working and why", score: 0 }
-    ],
-    group: "b"
+	section: "Section B — Strategic clarity",
+	text: "When you look at your monthly paid media report, how confident are you in what it's telling you?",
+	options: [
+	  { text: "Not confident — it often raises more questions than it answers", score: 3 },
+	  { text: "Somewhat — I understand the surface numbers but not the strategy behind them", score: 2 },
+	  { text: "Mostly confident, but I still rely on someone else to interpret it", score: 1 },
+	  { text: "Fully confident — I know exactly what's working and why", score: 0 }
+	],
+	group: "b"
   },
   {
-    section: "Section B — Strategic clarity",
-    text: "How well does your current paid media strategy align with your broader business goals?",
-    options: [
-      { text: "Poorly — paid media feels disconnected from the rest of the business", score: 3 },
-      { text: "Somewhat — there's alignment at the campaign level but not strategically", score: 2 },
-      { text: "Mostly — we're aligned but the connection to profitability is unclear", score: 1 },
-      { text: "Fully — paid media strategy is built around my business goals and margins", score: 0 }
-    ],
-    group: "b"
+	section: "Section B — Strategic clarity",
+	text: "How well does your current paid media strategy align with your broader business goals?",
+	options: [
+	  { text: "Poorly — paid media feels disconnected from the rest of the business", score: 3 },
+	  { text: "Somewhat — there's alignment at the campaign level but not strategically", score: 2 },
+	  { text: "Mostly — we're aligned but the connection to profitability is unclear", score: 1 },
+	  { text: "Fully — paid media strategy is built around my business goals and margins", score: 0 }
+	],
+	group: "b"
   },
   {
-    section: "Section B — Strategic clarity",
-    text: "How would you describe your current paid media management model?",
-    options: [
-      { text: "A vendor I manage from the outside — updates feel like pulling teeth", score: 3 },
-      { text: "A service provider who does the work but doesn't really know my business", score: 2 },
-      { text: "A capable team, but not deeply integrated into how we operate", score: 1 },
-      { text: "A true partner — embedded, proactive, and invested in my results", score: 0 }
-    ],
-    group: "b"
+	section: "Section B — Strategic clarity",
+	text: "How would you describe your current paid media management model?",
+	options: [
+	  { text: "A vendor I manage from the outside — updates feel like pulling teeth", score: 3 },
+	  { text: "A service provider who does the work but doesn't really know my business", score: 2 },
+	  { text: "A capable team, but not deeply integrated into how we operate", score: 1 },
+	  { text: "A true partner — embedded, proactive, and invested in my results", score: 0 }
+	],
+	group: "b"
   },
   {
-    section: "Section C — Your profit foundation",
-    text: "Do you know your brand's break-even ROAS — the minimum return on ad spend needed before paid media is profitable?",
-    options: [
-      { text: "No — I've never calculated it", score: 3 },
-      { text: "I have a rough idea but it's not based on my real cost structure", score: 2 },
-      { text: "Yes, but my paid media strategy isn't actively built around it", score: 1 },
-      { text: "Yes — and every campaign is evaluated against it", score: 0 }
-    ],
-    group: "c"
+	section: "Section C — Your profit foundation",
+	text: "Do you know your brand's break-even ROAS — the minimum return on ad spend needed before paid media is profitable?",
+	options: [
+	  { text: "No — I've never calculated it", score: 3 },
+	  { text: "I have a rough idea but it's not based on my real cost structure", score: 2 },
+	  { text: "Yes, but my paid media strategy isn't actively built around it", score: 1 },
+	  { text: "Yes — and every campaign is evaluated against it", score: 0 }
+	],
+	group: "c"
   },
   {
-    section: "Section C — Your profit foundation",
-    text: "How does your paid media team approach contribution margin?",
-    options: [
-      { text: "They don't — we optimize for ROAS and revenue", score: 3 },
-      { text: "It comes up occasionally but isn't baked into the strategy", score: 2 },
-      { text: "We track it, but it's not the primary driver of campaign decisions", score: 1 },
-      { text: "Every campaign target is set against our contribution margin, not benchmarks", score: 0 }
-    ],
-    group: "c"
+	section: "Section C — Your profit foundation",
+	text: "How does your paid media team approach contribution margin?",
+	options: [
+	  { text: "They don't — we optimize for ROAS and revenue", score: 3 },
+	  { text: "It comes up occasionally but isn't baked into the strategy", score: 2 },
+	  { text: "We track it, but it's not the primary driver of campaign decisions", score: 1 },
+	  { text: "Every campaign target is set against our contribution margin, not benchmarks", score: 0 }
+	],
+	group: "c"
   },
   {
-    section: "Section C — Your profit foundation",
-    text: "Honestly — how much of your current ad spend do you believe is being wasted on underperforming campaigns?",
-    options: [
-      { text: "A significant amount — I have real concerns about waste", score: 3 },
-      { text: "Some — there are campaigns I suspect aren't working but haven't audited", score: 2 },
-      { text: "Not much — but I don't have strong data to back that up", score: 1 },
-      { text: "Minimal — we audit regularly and cut waste proactively", score: 0 }
-    ],
-    group: "c"
+	section: "Section C — Your profit foundation",
+	text: "Honestly — how much of your current ad spend do you believe is being wasted on underperforming campaigns?",
+	options: [
+	  { text: "A significant amount — I have real concerns about waste", score: 3 },
+	  { text: "Some — there are campaigns I suspect aren't working but haven't audited", score: 2 },
+	  { text: "Not much — but I don't have strong data to back that up", score: 1 },
+	  { text: "Minimal — we audit regularly and cut waste proactively", score: 0 }
+	],
+	group: "c"
   }
 ];
 
@@ -1290,11 +1289,11 @@ function render() {
   const list = document.getElementById('options-list');
   list.innerHTML = '';
   q.options.forEach((opt, i) => {
-    const btn = document.createElement('button');
-    btn.className = 'option' + (answers[current] === i ? ' selected' : '');
-    btn.innerHTML = '<div class="opt-radio"></div><span class="opt-text">' + opt.text + '</span>';
-    btn.onclick = () => selectAnswer(i);
-    list.appendChild(btn);
+	const btn = document.createElement('button');
+	btn.className = 'option' + (answers[current] === i ? ' selected' : '');
+	btn.innerHTML = '<div class="opt-radio"></div><span class="opt-text">' + opt.text + '</span>';
+	btn.onclick = () => selectAnswer(i);
+	list.appendChild(btn);
   });
 
   document.getElementById('back-btn').disabled = current === 0;
@@ -1339,48 +1338,48 @@ async function submitEmail() {
 
   if (!firstName) { errorEl.textContent = 'Please enter your first name.'; return; }
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    errorEl.textContent = 'Please enter a valid email address.';
-    return;
+	errorEl.textContent = 'Please enter a valid email address.';
+	return;
   }
 
   btn.disabled = true;
   btn.textContent = 'Sending…';
 
   try {
-    // ── Kit.com (ConvertKit) API submission ──
-    // Replace YOUR_FORM_ID with your Kit.com form ID
-    // Replace YOUR_API_KEY with your Kit.com public API key
-    const KIT_FORM_ID = 'YOUR_FORM_ID';
-    const KIT_API_KEY = 'YOUR_API_KEY';
+	// ── Kit.com (ConvertKit) API submission ──
+	// Replace YOUR_FORM_ID with your Kit.com form ID
+	// Replace YOUR_API_KEY with your Kit.com public API key
+	const KIT_FORM_ID = '9380770';
+	const KIT_API_KEY = 'iQpGzIzz_cZB1uxne3fYjg';
 
-    const payload = {
-      api_key: KIT_API_KEY,
-      email: email,
-      first_name: firstName,
-      fields: {
-        quiz_score: calcTotal(),
-        quiz_era: calcEra(),
-        quiz_source: 'postagencyera.com'
-      }
-    };
+	const payload = {
+	  api_key: KIT_API_KEY,
+	  email: email,
+	  first_name: firstName,
+	  fields: {
+		quiz_score: calcTotal(),
+		quiz_era: calcEra(),
+		quiz_source: 'postagencyera.com'
+	  }
+	};
 
-    await fetch(`https://api.convertkit.com/v3/forms/${KIT_FORM_ID}/subscribe`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify(payload)
-    });
+	await fetch(`https://api.convertkit.com/v3/forms/${KIT_FORM_ID}/subscribe`, {
+	  method: 'POST',
+	  headers: { 'Content-Type': 'application/json; charset=utf-8' },
+	  body: JSON.stringify(payload)
+	});
 
   } catch (e) {
-    // Fail silently — show results regardless of API status
-    console.log('Kit submission error (non-blocking):', e);
+	// Fail silently — show results regardless of API status
+	console.log('Kit submission error (non-blocking):', e);
   }
 
   // ── Fire Meta Lead event ──
   if (typeof fbq === 'function') {
-    fbq('track', 'Lead', {
-      content_name: 'Post-Agency Era Quiz',
-      content_category: 'Quiz Lead Capture'
-    });
+	fbq('track', 'Lead', {
+	  content_name: 'Post-Agency Era Quiz',
+	  content_category: 'Quiz Lead Capture'
+	});
   }
 
   btn.disabled = false;
@@ -1440,32 +1439,32 @@ function showResults() {
   let title, era, headline, desc, ctaHead, ctaSub, ctaBtn1Text, ctaBtn1Href, ctaBtn2Text, ctaBtn2Href;
 
   if (total >= 20) {
-    title = "You're deep in the agency era.";
-    era = "Still in the agency era";
-    headline = "You're experiencing the full weight of the traditional model — and it's quietly costing you.";
-    desc = "Junior account managers, black-box reporting, fragmented accountability, and a paid media strategy that isn't built around your real margins. The good news: this is exactly the inflection point the post-agency era was built for. A Profit Audit is the fastest way to see what's actually happening in your account — and what to do about it.";
-    ctaHead = "Ready to see what's really happening in your account?";
-    ctaSub = "The Profit Audit is a senior-level deep dive into your paid media — personally conducted by Rob Bettis. Plain-English report. Prioritized action plan. No junior analysts.";
-    ctaBtn1Text = "Book a Profit Audit"; ctaBtn1Href = "https://robbettis.com/profit-audit";
-    ctaBtn2Text = "Download the free guide"; ctaBtn2Href = "https://paidmediaredflags.com";
+	title = "You're deep in the agency era.";
+	era = "Still in the agency era";
+	headline = "You're experiencing the full weight of the traditional model — and it's quietly costing you.";
+	desc = "Junior account managers, black-box reporting, fragmented accountability, and a paid media strategy that isn't built around your real margins. The good news: this is exactly the inflection point the post-agency era was built for. A Profit Audit™ is the fastest way to see what's actually happening in your account — and what to do about it.";
+	ctaHead = "Ready to see what's really happening in your account?";
+	ctaSub = "The Profit Audit™ is a senior-level deep dive into your paid media — personally conducted by Rob Bettis. Plain-English report. Prioritized action plan. No junior analysts.";
+	ctaBtn1Text = "Book a Profit Audit™"; ctaBtn1Href = "https://robbettis.com/profit-audit";
+	ctaBtn2Text = "Download the free guide"; ctaBtn2Href = "https://robbettis.com/5-red-flags-your-ad-agency-is-wasting-your-budget";
   } else if (total >= 10) {
-    title = "You're approaching your post-agency era.";
-    era = "At the inflection point";
-    headline = "You can feel the tension — and you're right to. Your brand has partially outgrown the model.";
-    desc = "There are signs of a maturing brand: some strategic clarity, some profit awareness. But there are also clear gaps in accountability, in how your paid media is managed, and in how tightly your ad strategy connects to your real margins. A Profit Audit would identify exactly where the waste is and give you a clear roadmap before you commit to a new model.";
-    ctaHead = "Close the gaps with a senior-level review.";
-    ctaSub = "The Profit Audit identifies exactly where your paid media is underperforming — and what to fix first. One-time. $1,995. Personally conducted by Rob.";
-    ctaBtn1Text = "Book a Profit Audit"; ctaBtn1Href = "https://robbettis.com/profit-audit";
-    ctaBtn2Text = "Explore partnerships"; ctaBtn2Href = "https://robbettis.com/services";
+	title = "You're approaching your post-agency era.";
+	era = "At the inflection point";
+	headline = "You can feel the tension — and you're right to. Your brand has partially outgrown the model.";
+	desc = "There are signs of a maturing brand: some strategic clarity, some profit awareness. But there are also clear gaps in accountability, in how your paid media is managed, and in how tightly your ad strategy connects to your real margins. A Profit Audit™ would identify exactly where the waste is and give you a clear roadmap before you commit to a new model.";
+	ctaHead = "Close the gaps with a senior-level review.";
+	ctaSub = "The Profit Audit™ identifies exactly where your paid media is underperforming — and what to fix first. One-time. Completely custom. Personally conducted by Rob.";
+	ctaBtn1Text = "Book a Profit Audit™"; ctaBtn1Href = "https://robbettis.com/profit-audit";
+	ctaBtn2Text = "Explore a partnership"; ctaBtn2Href = "https://robbettis.com/fractional-paid-media-management";
   } else {
-    title = "You're ready for your post-agency era.";
-    era = "Post-agency era ready";
-    headline = "Your brand has the strategic maturity to move beyond the traditional agency model.";
-    desc = "You have strong profit fundamentals, strategic clarity, and a clear sense of what a real partnership looks like. The next step is finding the right senior-level partner to execute at the standard your brand is ready for. A fractional partnership with Rob integrates directly into your team — one expert, full accountability, no handoffs.";
-    ctaHead = "You're ready. Let's talk.";
-    ctaSub = "Apply for a fractional partnership — Rob will personally review your application and recommend the right fit for your brand's stage.";
-    ctaBtn1Text = "Apply for a partnership"; ctaBtn1Href = "https://robbettis.com/contact";
-    ctaBtn2Text = "Start with a Profit Audit"; ctaBtn2Href = "https://robbettis.com/profit-audit";
+	title = "You're ready for your post-agency era.";
+	era = "Post-agency era ready";
+	headline = "Your brand has the strategic maturity to move beyond the traditional agency model.";
+	desc = "You have strong profit fundamentals, strategic clarity, and a clear sense of what a real partnership looks like. The next step is finding the right senior-level partner to execute at the standard your brand is ready for. A fractional partnership with Rob integrates directly into your team — one expert, full accountability, no handoffs.";
+	ctaHead = "You're ready. Let's talk.";
+	ctaSub = "Apply for a fractional partnership — Rob will personally review your application and recommend the right fit for your brand's stage.";
+	ctaBtn1Text = "Apply for a partnership"; ctaBtn1Href = "https://robbettis.com/fractional-paid-media-management";
+	ctaBtn2Text = "Start with a Profit Audit™"; ctaBtn2Href = "https://robbettis.com/profit-audit";
   }
 
   document.getElementById('result-title').textContent = title;
@@ -1483,21 +1482,21 @@ function showResults() {
 
   const gapSection = document.getElementById('gap-section');
   if (gaps.length > 0) {
-    gapSection.style.display = 'block';
-    gapSection.innerHTML = '<div class="gap-title">Key gaps identified</div>' +
-      gaps.map(g => '<div class="gap-item"><div class="gap-dot"></div><span>' + g + '</span></div>').join('');
+	gapSection.style.display = 'block';
+	gapSection.innerHTML = '<div class="gap-title">Key gaps identified</div>' +
+	  gaps.map(g => '<div class="gap-item"><div class="gap-dot"></div><span>' + g + '</span></div>').join('');
   } else {
-    gapSection.style.display = 'none';
+	gapSection.style.display = 'none';
   }
 
   document.getElementById('cta-block').innerHTML =
-    '<div class="cta-label">Your next step</div>' +
-    '<p class="cta-head">' + ctaHead + '</p>' +
-    '<p class="cta-sub">' + ctaSub + '</p>' +
-    '<div class="cta-btns">' +
-    '<a href="' + ctaBtn1Href + '" class="cta-btn gold" target="_blank">' + ctaBtn1Text + ' →</a>' +
-    '<a href="' + ctaBtn2Href + '" class="cta-btn outline" target="_blank">' + ctaBtn2Text + '</a>' +
-    '</div>';
+	'<div class="cta-label">Your next step</div>' +
+	'<p class="cta-head">' + ctaHead + '</p>' +
+	'<p class="cta-sub">' + ctaSub + '</p>' +
+	'<div class="cta-btns">' +
+	'<a href="' + ctaBtn1Href + '" class="cta-btn gold" target="_blank">' + ctaBtn1Text + ' →</a>' +
+	'<a href="' + ctaBtn2Href + '" class="cta-btn outline" target="_blank">' + ctaBtn2Text + '</a>' +
+	'</div>';
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
